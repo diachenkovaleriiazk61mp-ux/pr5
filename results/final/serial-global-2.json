@@ -1,0 +1,59 @@
+{
+  "mode": "global",
+  "kind": "serial",
+  "repeat": 2,
+  "D": 10,
+  "warmup": 1,
+  "start_utc": "2026-11-21T03:26:03.037396+00:00",
+  "invariants": true,
+  "final_size": 499,
+  "threads": [
+    {
+      "id": 1,
+      "role": "mixed",
+      "counts": {
+        "write": 204525,
+        "read": 163619
+      },
+      "operations": {
+        "add": 102263,
+        "remove": 102262,
+        "contains": 163619
+      },
+      "boundary": {
+        "write": 0,
+        "read": 1
+      }
+    }
+  ],
+  "roles": {
+    "write": {
+      "N": 204525,
+      "X": 20452.5,
+      "x": 20452.5,
+      "p50_us": 23.0,
+      "p99_us": 75.2,
+      "h": 3.2695652173913046,
+      "wait_max_ms": 0.159,
+      "w": 0.01128539,
+      "cv": 0.0,
+      "t_cs_us": 23.916120767632318,
+      "phi": 0.5555570646268851
+    },
+    "read": {
+      "N": 163619,
+      "X": 16361.9,
+      "x": 16361.9,
+      "p50_us": 19.4,
+      "p99_us": 63.6,
+      "h": 3.278350515463918,
+      "wait_max_ms": 0.3253,
+      "w": 0.00909937,
+      "cv": 0.0,
+      "t_cs_us": 20.140778882648103,
+      "phi": 0.44444293537311486
+    }
+  },
+  "raw_format": "gzip; little-endian uint64 rows: call_offset_ns,duration_ns,wait_ns,hold_ns",
+  "X": 36814.4
+}

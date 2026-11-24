@@ -1,0 +1,195 @@
+{
+  "mode": "rw",
+  "kind": "parallel",
+  "repeat": 3,
+  "D": 10,
+  "warmup": 1,
+  "start_utc": "2026-11-21T03:27:11.446657+00:00",
+  "invariants": true,
+  "final_size": 513,
+  "threads": [
+    {
+      "id": 1,
+      "role": "write",
+      "counts": {
+        "write": 8063,
+        "read": 0
+      },
+      "operations": {
+        "add": 4031,
+        "remove": 4032,
+        "contains": 0
+      },
+      "boundary": {
+        "write": 2,
+        "read": 0
+      }
+    },
+    {
+      "id": 2,
+      "role": "read",
+      "counts": {
+        "write": 0,
+        "read": 8063
+      },
+      "operations": {
+        "add": 0,
+        "remove": 0,
+        "contains": 8063
+      },
+      "boundary": {
+        "write": 0,
+        "read": 2
+      }
+    },
+    {
+      "id": 3,
+      "role": "write",
+      "counts": {
+        "write": 8063,
+        "read": 0
+      },
+      "operations": {
+        "add": 4031,
+        "remove": 4032,
+        "contains": 0
+      },
+      "boundary": {
+        "write": 2,
+        "read": 0
+      }
+    },
+    {
+      "id": 4,
+      "role": "read",
+      "counts": {
+        "write": 0,
+        "read": 8063
+      },
+      "operations": {
+        "add": 0,
+        "remove": 0,
+        "contains": 8063
+      },
+      "boundary": {
+        "write": 0,
+        "read": 2
+      }
+    },
+    {
+      "id": 5,
+      "role": "write",
+      "counts": {
+        "write": 8063,
+        "read": 0
+      },
+      "operations": {
+        "add": 4031,
+        "remove": 4032,
+        "contains": 0
+      },
+      "boundary": {
+        "write": 2,
+        "read": 0
+      }
+    },
+    {
+      "id": 6,
+      "role": "read",
+      "counts": {
+        "write": 0,
+        "read": 8063
+      },
+      "operations": {
+        "add": 0,
+        "remove": 0,
+        "contains": 8063
+      },
+      "boundary": {
+        "write": 0,
+        "read": 2
+      }
+    },
+    {
+      "id": 7,
+      "role": "write",
+      "counts": {
+        "write": 8063,
+        "read": 0
+      },
+      "operations": {
+        "add": 4031,
+        "remove": 4032,
+        "contains": 0
+      },
+      "boundary": {
+        "write": 2,
+        "read": 0
+      }
+    },
+    {
+      "id": 8,
+      "role": "read",
+      "counts": {
+        "write": 0,
+        "read": 8062
+      },
+      "operations": {
+        "add": 0,
+        "remove": 0,
+        "contains": 8062
+      },
+      "boundary": {
+        "write": 0,
+        "read": 2
+      }
+    },
+    {
+      "id": 9,
+      "role": "write",
+      "counts": {
+        "write": 8063,
+        "read": 0
+      },
+      "operations": {
+        "add": 4031,
+        "remove": 4032,
+        "contains": 0
+      },
+      "boundary": {
+        "write": 2,
+        "read": 0
+      }
+    }
+  ],
+  "roles": {
+    "write": {
+      "N": 40315,
+      "X": 4031.5,
+      "x": 806.3,
+      "p50_us": 1149.9,
+      "p99_us": 2429.0,
+      "h": 2.1123575963127226,
+      "wait_max_ms": 9.4058,
+      "w": 0.96643012,
+      "cv": 0.0,
+      "t_cs_us": 32.162227458762246,
+      "phi": 0.5555632114213268
+    },
+    "read": {
+      "N": 32251,
+      "X": 3225.1,
+      "x": 806.275,
+      "p50_us": 1150.9,
+      "p99_us": 2432.5,
+      "h": 2.113563298288296,
+      "wait_max_ms": 9.3263,
+      "w": 0.96391211,
+      "cv": 5.370533650332942e-05,
+      "t_cs_us": 35.56987070168367,
+      "phi": 0.4444367885786732
+    }
+  },
+  "raw_format": "gzip; little-endian uint64 rows: call_offset_ns,duration_ns,wait_ns,hold_ns",
+  "X": 7256.6
+}

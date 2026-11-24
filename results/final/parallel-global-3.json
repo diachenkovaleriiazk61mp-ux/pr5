@@ -1,0 +1,195 @@
+{
+  "mode": "global",
+  "kind": "parallel",
+  "repeat": 3,
+  "D": 10,
+  "warmup": 1,
+  "start_utc": "2026-11-21T03:27:00.051574+00:00",
+  "invariants": true,
+  "final_size": 522,
+  "threads": [
+    {
+      "id": 1,
+      "role": "write",
+      "counts": {
+        "write": 24886,
+        "read": 0
+      },
+      "operations": {
+        "add": 12443,
+        "remove": 12443,
+        "contains": 0
+      },
+      "boundary": {
+        "write": 2,
+        "read": 0
+      }
+    },
+    {
+      "id": 2,
+      "role": "read",
+      "counts": {
+        "write": 0,
+        "read": 29280
+      },
+      "operations": {
+        "add": 0,
+        "remove": 0,
+        "contains": 29280
+      },
+      "boundary": {
+        "write": 0,
+        "read": 2
+      }
+    },
+    {
+      "id": 3,
+      "role": "write",
+      "counts": {
+        "write": 25249,
+        "read": 0
+      },
+      "operations": {
+        "add": 12624,
+        "remove": 12625,
+        "contains": 0
+      },
+      "boundary": {
+        "write": 2,
+        "read": 0
+      }
+    },
+    {
+      "id": 4,
+      "role": "read",
+      "counts": {
+        "write": 0,
+        "read": 29238
+      },
+      "operations": {
+        "add": 0,
+        "remove": 0,
+        "contains": 29238
+      },
+      "boundary": {
+        "write": 0,
+        "read": 2
+      }
+    },
+    {
+      "id": 5,
+      "role": "write",
+      "counts": {
+        "write": 24812,
+        "read": 0
+      },
+      "operations": {
+        "add": 12406,
+        "remove": 12406,
+        "contains": 0
+      },
+      "boundary": {
+        "write": 2,
+        "read": 0
+      }
+    },
+    {
+      "id": 6,
+      "role": "read",
+      "counts": {
+        "write": 0,
+        "read": 28584
+      },
+      "operations": {
+        "add": 0,
+        "remove": 0,
+        "contains": 28584
+      },
+      "boundary": {
+        "write": 0,
+        "read": 2
+      }
+    },
+    {
+      "id": 7,
+      "role": "write",
+      "counts": {
+        "write": 24644,
+        "read": 0
+      },
+      "operations": {
+        "add": 12322,
+        "remove": 12322,
+        "contains": 0
+      },
+      "boundary": {
+        "write": 2,
+        "read": 0
+      }
+    },
+    {
+      "id": 8,
+      "role": "read",
+      "counts": {
+        "write": 0,
+        "read": 28821
+      },
+      "operations": {
+        "add": 0,
+        "remove": 0,
+        "contains": 28821
+      },
+      "boundary": {
+        "write": 0,
+        "read": 2
+      }
+    },
+    {
+      "id": 9,
+      "role": "write",
+      "counts": {
+        "write": 25806,
+        "read": 0
+      },
+      "operations": {
+        "add": 12903,
+        "remove": 12903,
+        "contains": 0
+      },
+      "boundary": {
+        "write": 2,
+        "read": 0
+      }
+    }
+  ],
+  "roles": {
+    "write": {
+      "N": 125397,
+      "X": 12539.7,
+      "x": 2507.94,
+      "p50_us": 363.5,
+      "p99_us": 1431.7,
+      "h": 3.938651994497937,
+      "wait_max_ms": 6.3131,
+      "w": 0.90742831,
+      "cv": 0.01649033457729142,
+      "t_cs_us": 29.588034004003287,
+      "phi": 0.5196295375435107
+    },
+    "read": {
+      "N": 115923,
+      "X": 11592.3,
+      "x": 2898.075,
+      "p50_us": 334.8,
+      "p99_us": 1371.9,
+      "h": 4.097670250896058,
+      "wait_max_ms": 4.0017,
+      "w": 0.903796275,
+      "cv": 0.01004018082001143,
+      "t_cs_us": 26.547183043917084,
+      "phi": 0.4803704624564893
+    }
+  },
+  "raw_format": "gzip; little-endian uint64 rows: call_offset_ns,duration_ns,wait_ns,hold_ns",
+  "X": 24132.0
+}
